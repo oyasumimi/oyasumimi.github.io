@@ -86,7 +86,7 @@
 }
 #c_widget button:disabled, #c_widget input[type=submit]:disabled {opacity: 60%;}
 #c_widget button:disabled:hover, #c_widget input[type=submit]:disabled:hover {
-    color: #B766FF;
+    color: white;
     border: 1px solid white;
 }
 
