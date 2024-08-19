@@ -212,10 +212,7 @@
 body {
     font-family: Ms Gothic;
     font-size: 1em;
-    background-image: url(https://files.catbox.moe/wl7sia.jpg);
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: transparent;
 }
 a {
     color: white;
