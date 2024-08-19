@@ -52,12 +52,6 @@
         #c_leftButton - The left <button>
         #c_rightButton - The right <button>
 */
-/* Top */
-
-.tsumugi {
-    display: block;
-    margin: 40px auto auto auto;
-}
 /* Main */
 #c_widget {
     box-sizing: border-box;
@@ -191,7 +185,7 @@
     font-size: 14px;
     text-align: justify;
     color: black;
-    background-color: white;
+    background-color: #F2F2F2;
 }
 
 /* Pagination */
