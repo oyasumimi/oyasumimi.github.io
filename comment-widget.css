@@ -212,7 +212,7 @@
 body {
     font-family: Ms Gothic;
     font-size: 1em;
-    background-color: transparent;
+    background: transparent;
 }
 a {
     color: white;
