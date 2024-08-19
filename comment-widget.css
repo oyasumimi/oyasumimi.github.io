@@ -137,7 +137,7 @@
     margin-bottom: 15px;
     padding: 10px;
     border: 2px ridge;
-    background-color: white;
+    background-color: #F2F2F2;
 }
 .c-reply {
     display: block;
@@ -185,7 +185,7 @@
     font-size: 14px;
     text-align: justify;
     color: black;
-    background-color: #F2F2F2;
+    background-color: white;
 }
 
 /* Pagination */
