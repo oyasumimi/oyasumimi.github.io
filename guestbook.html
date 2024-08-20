@@ -13,16 +13,18 @@
     </style>
   </head>
   <body>
+      <div id="c_widget"></div>
+      <script src="/comment-widget.js"></script>
       <script src="/jquery.js"></script>
        <script>
+         
 $( document ).ready( function( $ ) {
     $( '.c-site a' ).click( function( event ){
         event.preventDefault();
         window.open(( this ).href, '_blank');
     });
 });
+         
     </script>
-      <div id="c_widget"></div>
-      <script src="/comment-widget.js"></script>
   </body>
 </html>
