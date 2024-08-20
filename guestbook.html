@@ -12,11 +12,12 @@
       }
     </style>
     <script>
-var el = document.getElementByClassName('c-site'); // or some other way of making `el` point to your element
-var links = el.getElementsByTagName('a');
-for( var i = 0; i < links.length; i++ )
-{
-  links.target = '_blank';
+window.onload = function(){
+    var allLinks = document.querySelectorAll("c-site a");
+    for(var i = 0; i < allLinks.length; i++){
+        var currentLink = allLinks[i];
+        currentLink.setAttribute("target", "_blank");
+    }
 }
     </script>
   </head>
