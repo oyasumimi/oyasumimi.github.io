@@ -12,19 +12,14 @@
       }
     </style>
     <script>
-(function(){
-
-	$(".c-site a").each(function(i, obj){
-  
-  	obj.setAttribute("target", "_blank");
- 
-  });
-	
-})();
+$(document).on('click', '.c-site a', function(e){ 
+    e.preventDefault(); 
+    var url = $(this).attr('href'); 
+    window.open(url, '_blank');
+});
     </script>
   </head>
   <body>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       <div id="c_widget"></div>
       <script src="/comment-widget.js"></script>
   </body>
