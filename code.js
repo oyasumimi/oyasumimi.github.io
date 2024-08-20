@@ -1,14 +1,8 @@
-function openInNewTab(url) {
-  window.open(url, '_blank');
-}
-document.addEventListener("DOMContentLoaded", function() {
-  var links = document.querySelectorAll('a');
-  for (var i = 0; i < links.length; i++) {
-    if (links[i].href && !links[i].href.startsWith(window.location.origin)) {
-      links[i].addEventListener('click', function(event) {
-        openInNewTab(this.href);
-        event.preventDefault();
-      });
-    }
+function externalLinks() {
+  for(var c = document.getElementsByTagName("a"), a = 0;a < c.length;a++) {
+    var b = c[a];
+    b.getAttribute("href") && b.hostname !== location.hostname && (b.target = "_blank")
   }
-});
+}
+;
+externalLinks();
