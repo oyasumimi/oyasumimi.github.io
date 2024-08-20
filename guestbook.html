@@ -12,10 +12,16 @@
       }
     </style>
     <script>
-$(document).on('click', '.c-site', function(e){ 
-    e.preventDefault(); 
-    var url = $(this).attr('href'); 
-    window.open(url, '_blank');
+window.addEventListener("DOMContentLoaded", e =>
+{
+  document.querySelectorAll('a[href]').forEach(a =>
+  {
+    if (location.hostname == new URL(a.href).hostname)
+      return;
+
+    a.target = "_blank";
+    a.rel = "noreferrer nofollow noopener";
+  });
 });
     </script>
   </head>
