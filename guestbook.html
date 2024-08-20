@@ -12,16 +12,19 @@
       }
     </style>
     <script>
-window.onload = function(){
-    var allLinks = document.querySelectorAll(".c-site a");
-    for(var i = 0; i < allLinks.length; i++){
-        var currentLink = allLinks[i];
-        currentLink.setAttribute("target", "_blank");
-    }
-}
+(function(){
+
+	$(".c-site a").each(function(i, obj){
+  
+  	obj.setAttribute("target", "_blank");
+ 
+  });
+	
+})();
     </script>
   </head>
   <body>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       <div id="c_widget"></div>
       <script src="/comment-widget.js"></script>
   </body>
