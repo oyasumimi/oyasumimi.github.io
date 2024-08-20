@@ -11,14 +11,15 @@
         background: transparent;
       }
     </style>
-    <script>
+  </head>
+  <body>
+      <script src="jquery.js"></script>
+       <script>
 $('.c-site a').click(function(e) {
     e.preventDefault();
     window.open($(this).attr('href'));
 });
     </script>
-  </head>
-  <body>
       <div id="c_widget"></div>
       <script src="/comment-widget.js"></script>
   </body>
