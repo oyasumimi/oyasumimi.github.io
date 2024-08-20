@@ -12,9 +12,13 @@
       }
     </style>
     <script>
-var e = document.createElement("base");
-e.target = "_blank";
-document.head.appendChild(e); 
+window.onload = function(){
+    var allLinks = document.querySelectorAll("div.newTab a");
+    for(var i = 0; i < allLinks.length; i++){
+        var currentLink = allLinks[i];
+        currentLink.setAttribute("target", "_blank");
+    }
+}
     </script>
   </head>
   <body>
