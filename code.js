@@ -1,6 +1,5 @@
-$( document ).ready( function( $ ) {
-    $( '.c-site a' ).click( function( event ){
-        event.preventDefault();
-        window.open(( this ).href, '_blank');
-    });
+$(document).on('click', '.c-site a', function(e){ 
+    e.preventDefault(); 
+    var url = $(this).attr('href'); 
+    window.open(url, '_blank');
 });
